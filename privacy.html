@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Privacy Policy for Job Agent</title>
+<style>
+body { margin: 0; background: #ffffff; color: #1a1a1a;
+  font: 17px/1.6 Georgia, "Times New Roman", serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+p, ol { margin: 0 0 1rem; }
+a { color: #0b4f9e; }
+nav { font-size: 0.9rem; margin: 0 0 1.5rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Job Agent</a></nav>
+<h1>Privacy Policy for Job Agent</h1>
+<p>Effective date: 2026-11-15.</p>
+<h2>1. Who this covers</h2>
+<p>Job Agent (&quot;the App&quot;) is a private tool operated by Brian Harper (&quot;the Operator&quot;). The Operator is its only user. The App is not offered to the public. This policy describes what the App does with Google account data.</p>
+<h2>2. Google permissions the App holds</h2>
+<p>The App holds 3 permissions on one Google account that the Operator owns (&quot;the Account&quot;).</p>
+<p>(a) Gmail, read-only. Google grants this permission for the whole mailbox. The App requests only the messages that carry the Gmail label &quot;Job Alerts&quot;. It requests no other message.</p>
+<p>(b) Gmail, insert. The App places a digest message in the inbox of the Account after each run. This permission cannot read, send, edit or delete mail.</p>
+<p>(c) Google Sheets, read-only. Google grants this permission for every sheet the Account can open. The App reads columns A to E of one tab of one sheet. That sheet holds the Operator&#x27;s own job application log. The App never changes the sheet.</p>
+<h2>3. What the App keeps and why</h2>
+<p>3.1 From each job alert email, the App keeps the job title, the company name, the location and the result of the lookup described in this Section. It uses them to find the same job on the employer&#x27;s public job board. It does not open the links inside alert emails.</p>
+<p>3.2 From the sheet, the App reads the company, the role, the application date, the outcome and the outcome date. It uses them to avoid showing the Operator a job he has already applied to, and to mark a job that has been posted again.</p>
+<h2>4. Storage</h2>
+<p>4.1 The App runs on GitHub Actions inside a private repository on GitHub (&quot;the Repository&quot;). The Operator is the only user with access to the Repository.</p>
+<p>4.2 A copy of each alert email exists on the GitHub Actions machine only while a run is in progress. GitHub discards that machine when the run ends. When the Operator runs the App on his own computer, the copy is saved in a folder on that computer.</p>
+<p>4.3 The fields listed in Section 3.1 are stored in the App&#x27;s database and working files. The database and working files are kept in the Repository and on the Operator&#x27;s computer.</p>
+<p>4.4 The rows read from the sheet are not saved in the Repository. For each job posting, the database holds a mark that says whether the Operator applied to that job, or to that company, before.</p>
+<p>4.5 Each run saves its output, including the digest, in the Repository for 14 days. The digest may show the date of an earlier application beside a job that has been posted again. A weekly backup of the database is kept in the Repository for 35 days.</p>
+<p>4.6 The sign-in token that Google issues to the App is stored as an encrypted secret in the Repository and in a settings file on the Operator&#x27;s computer.</p>
+<h2>5. Sharing</h2>
+<p>5.1 The App does not sell, rent or share Google data. It does not use Google data for advertising. No person other than the Operator reads it.</p>
+<p>5.2 The App does not send the text of any email, or any content of the sheet, to a third party. It sends company names to public employer job boards to look up open roles. Some of those company names come from alert emails.</p>
+<p>5.3 Other than the storage described in Section 4 and the lookups described in Section 5.2, the App transfers no Google data to any third party.</p>
+<p>5.4 The App uses an AI model from Anthropic to compare public job descriptions with the Operator&#x27;s own profile. The text sent to the model is the public job posting and that profile. It contains no email content and no sheet content. The App does not use Google data to create, train or improve any artificial intelligence or machine learning model.</p>
+<h2>6. Limited Use</h2>
+<p>The use of information received from Google Workspace scopes will adhere to the Google User Data Policy, including the Limited Use requirements. That policy is published at <a href="https://developers.google.com/terms/api-services-user-data-policy">https://developers.google.com/terms/api-services-user-data-policy</a>.</p>
+<h2>7. Retention and deletion</h2>
+<p>7.1 The Operator can delete the stored data at any time by deleting the App&#x27;s database, its working files and the saved run output.</p>
+<p>7.2 The Operator can also revoke the App&#x27;s access to the Account at any time at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<h2>8. Changes</h2>
+<p>A change to this policy will be posted on this page with a new effective date.</p>
+<h2>9. Contact</h2>
+<p>The Operator&#x27;s GitHub profile is at <a href="https://github.com/harperbrian">https://github.com/harperbrian</a>.</p>
+</main>
+</body>
+</html>

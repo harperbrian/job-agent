@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Job Agent</title>
+<style>
+body { margin: 0; background: #ffffff; color: #1a1a1a;
+  font: 17px/1.6 Georgia, "Times New Roman", serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+p, ol { margin: 0 0 1rem; }
+a { color: #0b4f9e; }
+nav { font-size: 0.9rem; margin: 0 0 1.5rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Job Agent</h1>
+<p>Job Agent is a private tool. Brian Harper directed its build with Claude Code and is its only user. It helps him review job postings. Nobody else can sign in to it, and it is not offered to the public.</p>
+<h2>What it does</h2>
+<p>Every morning except Sunday, at 3:45 AM Detroit time, Job Agent reads the public job boards of the employers on his list and the job alert emails he already receives. Duplicates are dropped. Jobs he has already applied to are left out. Each remaining job is checked against his fixed requirements for pay, benefits and work location, and its description is then scored against his verified work history. One digest goes into his own inbox, listing only the jobs that scored 70 or higher.</p>
+<p>Brian reads the digest and decides. Applying stays with him. Job Agent never applies to a job, and it never sends a message to anyone.</p>
+<h2>Why it asks for Google access</h2>
+<p>All of this runs on one Google account that Brian owns. It holds 3 permissions there.</p>
+<ol>
+<li>Read Gmail. It reads the job alert emails filed under one label, &quot;Job Alerts&quot;.</li>
+<li>Insert into Gmail. It places the daily digest in the inbox. This permission cannot send mail.</li>
+<li>Read Google Sheets. It reads his own log of applications, so the digest can leave out jobs he has applied to.</li>
+</ol>
+<p>None of the Google data is sold or shared. None of it is used for advertising. The <a href="privacy.html">Privacy Policy</a> says what Job Agent reads, what it keeps and where.</p>
+<h2>Contact</h2>
+<p>Brian Harper is on GitHub at <a href="https://github.com/harperbrian">github.com/harperbrian</a>.</p>
+</main>
+</body>
+</html>
